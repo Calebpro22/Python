@@ -1,1 +1,34 @@
+from mcpi.minecraft import Minecraft
+from mcpi import block	  
+
+mc = Minecraft.create()
+
+mc.postToChat("Hello world")
+x, y, z = mc.player.getTilePos()                                                  
+#x, y, z = mc.player.getPos()
+
+mc.setBlock(x+1, y+1, z+1, 1)
+mc.setBlock(x+1, y+1, z+2, 2)
+mc.setBlock(x+1, y+1, z+3, 3)
+mc.setBlock(x+1, y+1, z+4, 4)
+mc.setBlock(x+1, y+1, z+5, 5)
+mc.setBlock(x+1, y+1, z+6, 6)
+mc.setBlock(x+1, y+1, z+7, 7)
+mc.setBlock(x+1, y+1, z+8, 7)
+mc.setBlock(x+1, y+2, z+1, 7)
+mc.setBlock(x+1, y+2, z+2, 7)
+mc.setBlock(x+1, y+2, z+3, 7)
+mc.setBlock(x+1, y+2, z+4, 12)
+mc.setBlock(x+1, y+2, z+5, 13)
+mc.setBlock(x+1, y+2, z+6, 14)
+mc.setBlock(x+1, y+2, z+7, 15)
+mc.setBlock(x+1, y+2, z+8, 16)
+mc.setBlock(x+1, y+3, z+1, 17)
+mc.setBlock(x+1, y+3, z+2, 18)
+mc.setBlock(x+1, y+3, z+3, 19)
+mc.setBlock(x+1, y+3, z+4, 20)
+mc.player.setPos(0,10 ,0)
+#COAL_ORE             16
+#WOOD                 17
+#LEAVES               18
 
